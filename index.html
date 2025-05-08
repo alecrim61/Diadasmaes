@@ -1,17 +1,31 @@
-<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDv-6aazC2diSyhCOJiYUwN5NoZ67PsXUY",
-    authDomain: "marcacao-coletas.firebaseapp.com",
-    databaseURL: "https://marcacao-coletas-default-rtdb.firebaseio.com",
-    projectId: "marcacao-coletas",
-    storageBucket: "marcacao-coletas.appspot.com",
-    messagingSenderId: "546476889758",
-    appId: "1:546476889758:web:f193b3125feeb5f4514d8f"
-  };
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Dia das Mães</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">Feliz Dia das Mães! 💐</h1>
+    
+    <!-- Imagem local -->
+    <img src="img/mae.jpg" alt="Dia das Mães" class="imagem-mae"/>
 
-  // Inicializa o Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const db = firebase.database(); // ← agora essa variável estará definida
-</script>
+    <p class="mensagem">Hoje é o dia de celebrar todo o amor, carinho e força das mães!</p>
+    <button onclick="mostrarMensagem()">Clique para ver uma surpresa 💝</button>
+    <p id="mensagem-secreta" class="mensagem-secreta"></p>
+  </div>
+
+  <div id="hearts-container"></div>
+
+  <script src="script.js"></script>
+
+  <footer class="rodape" id="rodape">
+    De seu filho querido Fernando 💖
+  </footer>
+  
+</body>
+</html>
